@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/companycolor"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtalert"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:background="@color/companycolor"
+            android:text="@string/closefont"
+            android:textColor="@color/white"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/companycolor"
+            android:text="Pick Time"
+            android:textColor="@color/white"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <TimePicker
+        android:id="@+id/tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/companycolor"
+            android:textColor="@color/white"
+            android:text="OK"
+
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

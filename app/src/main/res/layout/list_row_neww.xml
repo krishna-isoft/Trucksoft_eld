@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:text="Device Name: UNKNOWN"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_margin="5dp"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Device Address : 456w567657567567576"
+            android:layout_below="@+id/name"
+            android:lines="1"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"  />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+android:text="r54645"
+            android:textColor="@color/companycolor"
+            android:textStyle="italic"
+            android:layout_margin="5dp"
+            android:layout_alignRight="@+id/name"
+            android:layout_alignEnd="@+id/name" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/max_padding"
+    android:background="@drawable/bgk">
+    <LinearLayout
+        android:id="@+id/idlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+  <!--      <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Force Crash!"
+            android:onClick="forceCrash"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />-->
+
+        <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+android:layout_marginLeft="@dimen/min_height"
+            android:layout_marginRight="@dimen/min_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/min_height"
+
+        android:src="@drawable/elogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_lower_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Powered by"
+            android:textSize="13dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textStyle="bold|italic"
+            android:textSize="16sp"
+            android:textColor="@color/companycolor"
+            android:text="@string/contactemail" />
+    </LinearLayout>
+</RelativeLayout>

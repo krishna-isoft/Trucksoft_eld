@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/driver_list_rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/driver_list_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:padding="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/driver_list_iv_back"
+            android:text="SERVICE TICKET"
+            android:textColor="#fff"
+            android:textSize="18sp"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/driver_list_tv_title"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vt">
+
+        <TextView
+            android:id="@+id/dds"
+            android:layout_width="45dp"
+            android:gravity="right"
+            android:layout_height="48dp"
+
+           android:layout_gravity="right"
+        android:visibility="invisible"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:id="@+id/vt"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/driver_list_tv_add_report"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_add_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="4dp"
+            android:text="ADD SERVICE\n TICKET"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/driver_list_rl_header"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/driver_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/dashboard_lower_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_padding"
+                android:background="@color/footer_color">
+
+            </View>
+          <!--  <TextView
+                android:id="@+id/helpline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="+1-877-922-9700"
+                android:drawableLeft="@drawable/phone_s"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/company_mark"
+                android:textColor="@color/black" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_small" />-->
+        </LinearLayout>
+
+</RelativeLayout>

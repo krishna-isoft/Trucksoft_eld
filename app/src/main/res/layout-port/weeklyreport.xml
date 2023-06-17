@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/direct_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_padding"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <com.isoft.trucksoft_elog.Isoft_activity.MovableFloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:scaleType="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_dialog_email" />
+        <include layout="@layout/report_header" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last 7 Days Report"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tdriveseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Driving (7 days) :"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textSize="16sp"
+            android:padding="3dp"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tondutyseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Onduty (7days)  :"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textSize="16sp"
+            android:padding="3dp"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/toddrseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total OD+DR (7days)  :"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textSize="16sp"
+           android:padding="3dp"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/lintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#7F7F7F"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tbt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_marginBottom="@dimen/medium_padding"
+            android:layout_marginRight="10dp"
+            android:text="@string/backfont"
+            android:textSize="@dimen/back_iconsize"
+
+            android:layout_marginLeft="@dimen/max_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/text_small"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_marginBottom="@dimen/medium_padding"
+
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center"
+            android:text="             Driver Log Report"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_marginLeft="@dimen/max_margin"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="@dimen/medium_padding"
+
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="onClick"
+                android:src="@drawable/back_dashboard" />
+        </RelativeLayout>
+    </LinearLayout>-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        android:padding="@dimen/low_padding">
+
+        <TableRow android:layout_marginTop="@dimen/max_margin"
+            android:background="@color/light_gray"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.4"
+                android:text="DATE"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.4"
+                android:text="@string/on_dutty"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:padding="@dimen/medium_padding"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="@string/of_dutty" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="@string/drive"
+                android:singleLine="true" />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="@string/sleep"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:singleLine="true" />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="OD+DR(Hr)"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:singleLine="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.2"
+                android:visibility="gone"
+                android:src="@drawable/vk"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Clarify now"
+                android:background="@drawable/button_ident"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+
+
+
+    <ListView
+        android:id="@+id/chatactivity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/companycolor">
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:onClick="onClick"
+            android:padding="13dp"
+            android:src="@drawable/back_dashboard" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:background="@color/companycolor"
+            android:text="SELECT YOUR VEHICLE"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/slect"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Search Vehicle"/>
+        <Button
+            android:id="@+id/showallbtn"
+            style="@style/krd_button"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Show all"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/txt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/companycolor"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:text="@string/search_font"/>
+    </LinearLayout>
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/viewc">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chatactivity_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+
+                >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

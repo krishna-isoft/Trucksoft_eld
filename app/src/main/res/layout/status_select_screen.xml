@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_header_status_select"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/imageView_back_status_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="21dp"
+            android:onClick="onClick"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/textView1_header_status_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_back_status_select"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Select Status"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/v1"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/txtaddtrailor"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/addtr"
+            android:textColor="@color/companycolor"
+            android:background="@drawable/button_shape_small"
+            android:text="New Trailor"></TextView>
+
+</LinearLayout>
+         <View
+             android:id="@+id/v1"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/textView2_header_status_select"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2_header_status_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Done"
+            android:textColor="#fff"
+            android:textSize="15sp"
+             />
+    </RelativeLayout>
+
+
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"
+
+            android:layout_alignRight="@+id/txtaddtrailor"
+            />
+
+
+
+
+    <ListView
+        android:id="@+id/status_select_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

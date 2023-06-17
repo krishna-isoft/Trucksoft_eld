@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:id="@+id/lintop"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/freight_ticket_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/listview_layout_next"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/listview_layout_tv2_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="CARRIER"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/listview_layout_tv2_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/listview_layout_tv3_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Nick Name"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/txt_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textColor="#000"
+                        android:text="Date"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:weightSum="1" >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+    <LinearLayout
+        android:id="@+id/lintotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        ></LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+
+            android:textColor="@color/companycolor"
+            android:text="Grand Total Mileage  :"
+            android:layout_alignLeft="@+id/txt_grandmil"></TextView>
+
+            <TextView
+                android:id="@+id/txt_grandmil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:textColor="@color/companycolor"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:orientation="horizontal"
+            >
+            <TextView
+android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+
+                android:textColor="@color/companycolor"
+                android:text="Grand Total Fuel Used  :"
+                android:layout_alignLeft="@+id/txt_grandfuel"></TextView>
+
+            <TextView
+            android:id="@+id/txt_grandfuel"
+            android:layout_width="match_parent"
+                android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"
+            android:textStyle="bold"
+                android:paddingRight="5dp"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:textColor="@color/companycolor"
+            android:text=""></TextView>
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

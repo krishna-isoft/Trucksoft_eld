@@ -1,0 +1,182 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/lintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#7F7F7F"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tbt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_marginBottom="@dimen/medium_padding"
+            android:layout_marginRight="10dp"
+            android:text="SIGN HERE"
+            android:layout_marginLeft="@dimen/max_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:textStyle="bold" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/txdbt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="In my knowledge  these entries are true and correct"
+        android:background="@color/white"
+android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        android:textStyle="bold|italic" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/light_gray" />
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/driver_list_tv_add_report"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/light_gray" />
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/driver_list_tv_add_report"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/getsign"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/saved"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/light_gray" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <EditText
+            android:id="@+id/txt_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="20dp"
+
+            style="@style/edit_style"
+            android:gravity="center"
+            android:hint="@string/enmail"
+            android:imeActionLabel="Submit"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/medium_padding"
+            android:singleLine="true"
+            android:textColorHint="#c2c2c2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lnm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgsign"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/hand"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textColor="@color/companycolor"
+                android:text="Please sign here"
+                android:padding="10dp"
+                android:textSize="18sp"
+                ></TextView>
+        </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/lnm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:id="@+id/cardview"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+android:visibility="gone"
+                    android:hint="Draw Signature here"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>

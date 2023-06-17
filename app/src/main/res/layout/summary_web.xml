@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/companycolor"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:textColor="@color/white"
+            android:text="@string/backfont"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Summary Details"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_memecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

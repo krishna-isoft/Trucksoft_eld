@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/companycolor"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:textColor="@color/white"
+            android:text="@string/backfont"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Summary Details"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:background="@drawable/edittext_style">
+        <Spinner
+            android:id="@+id/f_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+          >
+
+        </Spinner>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/companycolor"
+        android:text="Day Summary"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_height="wrap_content">
+
+        <com.txusballesteros.widgets.FitChart
+            style="@style/chart_style"
+            android:layout_gravity="center"
+            app:animationMode="overdraw"
+            android:id="@+id/fitChart" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:textSize="15sp"
+                android:textColor="#757575"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtweek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/companycolor"
+        android:text="7 Day Summary"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.txusballesteros.widgets.FitChart
+            style="@style/chart_style"
+            android:layout_gravity="center"
+            app:animationMode="overdraw"
+            android:id="@+id/fitChart1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/l3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:textSize="15sp"
+                android:textColor="#757575"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

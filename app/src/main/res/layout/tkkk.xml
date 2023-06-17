@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp">
+<RelativeLayout   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/thumb_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/userpic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/thumb_img"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:id="@+id/chat_lis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/chat_list_rlk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chat_list_rl"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"  >
+
+                <TextView
+                    android:id="@+id/pub_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold|italic"
+
+                    android:textSize="11sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="AGUSTIN VERGAS"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/chat_list_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+               android:maxLines="2"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="16sp" />
+<TextView
+    android:id="@+id/txturl"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

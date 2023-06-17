@@ -1,0 +1,82 @@
+<LinearLayout
+    android:id="@+id/lin_driver"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/low_padding">
+
+        <TableRow
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtodo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="" />
+            <TextView
+                android:id="@+id/txtedit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="@string/edit" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="" />
+
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/l6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <RelativeLayout
+            android:id="@+id/badge_layoutzz1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:onClick="onClick"
+                android:paddingTop="5dp"
+                android:src="@drawable/sticket"
+                />
+        </RelativeLayout>
+        <!-- <RelativeLayout
+             android:id="@+id/badge_layoutz1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="10dp"
+             android:layout_weight="1"
+             android:gravity="center">
+         <ImageView
+             android:id="@+id/btn_thr"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:onClick="onClick"
+             android:paddingTop="5dp"
+             android:visibility="visible"
+             android:src="@drawable/toff"
+             />
+         </RelativeLayout>-->
+        <!-- <RelativeLayout
+             android:id="@+id/relthty"
+             android:layout_weight="1"
+             android:layout_toRightOf="@+id/badge_layoutzz1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center" >
+-->
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relthtyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:id="@+id/linthty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+
+                android:orientation="horizontal"
+                android:background="@drawable/rset">
+
+                <TableLayout
+                    android:id="@+id/rk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".53"
+
+                    android:layout_marginTop="@dimen/max_padding"
+                    android:layout_marginBottom="@dimen/max_padding"
+                    android:layout_marginLeft="@dimen/max_seven"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+
+
+
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_marginTop="@dimen/max_padding"
+                        >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_fourteen"
+                            android:text="OFF DUTY" />
+
+
+
+                    </TableRow>
+
+
+                    <TableRow android:layout_marginTop="@dimen/low_padding"
+                        >
+
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/text_ten"
+                            android:textColor="@color/black"
+                            android:text="Start:"
+                            />
+                        <TextView
+                            android:id="@+id/rk1"
+                            android:layout_weight="1.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/text_ten"
+
+                            android:textColor="@color/black"
+                            android:text="00:00" />
+
+
+                    </TableRow>
+
+
+                    <TableRow android:layout_marginTop="@dimen/medium_padding"
+                        >
+                        <TextView
+
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/text_ten"
+                            android:textColor="@color/black"
+                            android:text="Stop:"
+                            />
+                        <TextView
+                            android:id="@+id/rk2"
+                            android:layout_weight="1.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/text_ten"
+
+                            android:textColor="@color/black" />
+
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/top_height"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/thours"
+                            android:textSize="@dimen/text_ten"
+                            android:textStyle="bold|italic"
+                            android:singleLine="true" />
+
+
+
+                    </TableRow>
+                    <TableRow android:layout_marginTop="@dimen/low_padding"
+                        >
+
+                        <TextView
+                            android:id="@+id/rkk"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_ten"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+
+                            android:text="00:00 Hr" />
+
+
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--  </RelativeLayout>
+-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgk"
+    tools:context="com.isoft.trucksoft_elog.Company_Registration">
+
+    <RelativeLayout
+        android:id="@+id/driver_list_rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/driver_list_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/driver_list_iv_back"
+            android:text="VIEW DRIVER"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vt"
+            android:layout_toRightOf="@+id/driver_list_tv_title"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/dds"
+                android:layout_width="45dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+
+                android:gravity="right"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vt"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/driver_list_tv_add_report"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/driver_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="4dp"
+            android:text="EDIT DRIVER"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scccc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/driver_list_rl_header"
+android:layout_marginBottom="50dp"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dashboard_lower_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/idlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Company Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_compname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:editable="false"
+                            android:inputType="text"
+                            android:hint="Enter Company Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="First Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter First Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Last Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Last Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="D.O.B"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="yyyy-mm-dd"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="E-mail"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="textEmailAddress"
+                            android:hint="Enter E-mail Address"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Phone Number"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_phonenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:maxLength="14"
+                            android:gravity="center"
+                            android:inputType="phone"
+                            android:hint="(XXX) XXX-XXXX"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Address"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Address"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="City"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter City"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="State"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Inside text input layout add
+                                  an auto complete text view
+                                    and make its input type to none-->
+                            <Spinner
+                                android:id="@+id/auto_stateaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:inputType="none"
+                                android:gravity="center"
+                                android:background="@drawable/field"
+                                android:text="Select state"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Zipcode"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="Enter Zipcode"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Driver Lic. #"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_lic"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Driver Lic. #"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Note"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:hint="Enter note"
+                            android:maxLines="10"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/add_cancel"
+                            android:layout_width="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:text="    CANCEL    "
+                            android:background="@drawable/abcorner"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/driver_list_rl_header"
+                            android:layout_height="wrap_content"></TextView>
+
+                        <TextView
+                            android:id="@+id/add_submit"
+                            android:layout_width="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:text="    UPDATE    "
+                            android:background="@drawable/abcorner"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/driver_list_rl_header"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/dashboard_lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/max_padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Powered by"
+            android:textSize="13dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:drawableLeft="@drawable/phone_s"
+            android:textSize="16sp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/helpline"
+            android:textStyle="bold|italic"
+            android:textColor="@color/companycolor"
+            android:text="@string/contactemail"/>
+    </LinearLayout>
+</RelativeLayout>

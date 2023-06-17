@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:background="@drawable/my_custom_background"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:id="@+id/header_cover_imagez"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="65dp">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/max_padding"
+                android:src="@drawable/elogo" />
+            <TextView
+                android:id="@+id/txttread"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_alignRight="@+id/logo"
+                android:visibility="visible"
+                android:text="@string/trades"
+                android:textSize="16sp"
+
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RelativeLayout>
+<ScrollView
+    android:layout_below="@+id/header_cover_imagez"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="YOUR PRIVACY IS IMPORTANT TO US"
+                android:textColor="@color/companycolor"></TextView>
+
+            <TextView
+                android:id="@+id/t_topview"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+
+                android:text="@string/mksh"
+                android:textColor="@color/black"></TextView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="  “This app collects location data and IP address to enable the following features even when the app is closed or not in use.”
+as a part of meeting the requirements with the Motor Vehicle safety administration."></TextView>
+
+
+            <TextView
+                android:id="@+id/loc_sub"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="55"
+                android:textColor="@color/black"
+                android:text=""></TextView>
+
+
+        </LinearLayout>
+</ScrollView>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tbottom_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/splgray"
+        android:textSize="12sp"></TextView>
+            <TextView
+                android:id="@+id/taccept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGREE &amp; CONTINUE"
+                android:background="@color/companycolor"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"></TextView>
+</LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

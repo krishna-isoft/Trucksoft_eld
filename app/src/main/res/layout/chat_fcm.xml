@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_header_dispatch_detail_inside"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/companycolor" >
+         <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    
+                     >
+
+        <ImageView
+            android:id="@+id/chat_list_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/chat_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chat_list_iv_back"
+            android:padding="10dp"
+            android:text="Dispatcher Chat"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+       
+            <RelativeLayout
+                android:id="@+id/badge_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/chat_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        
+                        android:padding="5dp"
+
+                        android:src="@drawable/chatnitification" />
+
+                    <TextView
+                        android:id="@+id/badge_notification_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="2dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="37dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/chatnotifycount"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            </LinearLayout>
+       
+    </RelativeLayout>
+
+    <!--<ListView
+        android:id="@+id/chatactivity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/relativeLayout_header_dispatch_detail_inside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:scrollbars="vertical" />
+
+
+
+</LinearLayout>

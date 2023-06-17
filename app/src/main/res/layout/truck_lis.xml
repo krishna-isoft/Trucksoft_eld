@@ -1,0 +1,130 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_header_status_select"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/ch_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/CheckBoxTheme"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ch_select"
+                android:layout_toLeftOf="@+id/ch_unselect">
+         <!--   <TextView
+                android:id="@+id/txt_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:text="Upload Defective items"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+
+                android:background="@drawable/green_trading_button_effect"/>-->
+                <ImageView
+                    android:id="@+id/img_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/dfm"/>
+                <RelativeLayout
+                    android:id="@+id/badge_layout1"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/dashkt"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/txturl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/txtrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/txtdemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/badge1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@id/relative_layout"
+                        android:background="@drawable/dlll"
+                        android:gravity="right"
+                        android:padding="3dp"
+                        android:onClick="onClick"
+                        android:visibility="visible" />
+                </RelativeLayout>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/dgray"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+
+        />
+            </LinearLayout>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/ch_unselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/greenish"
+        android:theme="@style/CheckBoxThemegreen"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+</LinearLayout>

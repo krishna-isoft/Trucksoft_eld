@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ssk"
+    android:background="@drawable/corner2"
+    android:orientation="vertical" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+           <!-- <TextView
+                android:id="@+id/txt_timer"
+                android:text="00:00:00"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dip"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/max_margin"/>-->
+
+            <Chronometer
+                android:layout_weight="1"
+                android:id="@+id/chronometer"
+
+                android:format="%s"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+android:textColor="@color/black"
+                android:text="gdfg"
+                android:layout_height="wrap_content"
+
+                android:textSize="50sp"/>
+
+            </TableRow>
+        <TableRow
+            android:id="@+id/tableRowz"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+           <TextView
+                 android:id="@+id/txt_timer"
+                 android:text="     Elog By Trucksoft"
+                 android:layout_weight="1"
+                 android:textStyle="bold"
+                 android:textSize="16dp"
+                 android:textColor="@color/black"
+                 android:padding="20dip"
+                 android:gravity="center"
+                 android:layout_marginBottom="2dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowzx"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/txt_timers"
+                android:text="@string/company_mark2"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/light_gray"
+                android:padding="10dip"
+                android:gravity="center"
+                />
+
+        </TableRow>
+
+</TableLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rlbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/current_progress_text_view"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:id="@+id/file_length_text_view"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="5dp"
+      >
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/red"
+            android:text="@string/playfont1"
+            android:layout_marginRight="20dp"
+            android:textSize="40sp"
+             />
+
+        <TextView
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/description"
+            android:text="@string/stopfont"/>
+
+        <TextView
+            android:id="@+id/btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="40sp"
+
+            android:layout_marginRight="20dp"
+            android:textColor="@color/description"
+            android:text="@string/audplayfont1"/>
+
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/description"
+            android:text="@string/sendfont"/>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>

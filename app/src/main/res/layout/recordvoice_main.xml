@@ -1,0 +1,150 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_custom_background"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/companycolor"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtalert"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/companycolor"
+                    android:text="@string/closefont"
+                    android:textColor="@color/white"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@color/companycolor"
+                    android:text="RECORD REASON "
+                    android:textColor="@color/white"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="15dp"
+ >
+
+    <ImageButton
+        android:id="@+id/chat_send_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:scaleType="centerInside" />
+
+    <com.isoft.trucksoft_elog.Isoft_activity.FrameLayoutFixed
+        android:id="@+id/record_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/slideText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/slidearrow" />
+
+          <!--  <TextView
+                android:id="@+id/slideToCancelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:textColor="#999999"
+                android:textSize="12dp" />-->
+            <TextView
+                android:id="@+id/tslide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/scancel"
+                android:layout_gravity="center"
+                android:textColor="#898f9d"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/rec" />
+
+            <TextView
+                android:id="@+id/recording_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:text="00:00"
+                android:textColor="#4d4c4b"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </com.isoft.trucksoft_elog.Isoft_activity.FrameLayoutFixed>
+
+    <ImageButton
+        android:id="@+id/chat_audio_send_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:enabled="false"
+        android:paddingRight="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mic_button_states" />
+
+</RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

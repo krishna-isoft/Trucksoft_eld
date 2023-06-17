@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:padding="@dimen/medium_padding" >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lab_req_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/max_padding"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_dayrep"
+                    android:layout_width="@dimen/rep_icon"
+                    android:layout_height="@dimen/rep_icon"
+                    android:textSize="@dimen/rep_icons"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/golden"
+                    android:text="@string/note_font"
+
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Day Report"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/golden" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lab_entry_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/max_padding"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/txt_sevenrep"
+                    android:layout_width="@dimen/rep_icon"
+                    android:layout_height="@dimen/rep_icon"
+                    android:clickable="true"
+                    android:textSize="@dimen/rep_icons"
+                    android:textColor="@color/blue"
+                    android:text="@string/note_font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                   />
+
+                <TextView
+                    android:id="@+id/txt_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Last 7 Days Report"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lab_report_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/max_padding"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_thirtyrep"
+                    android:layout_width="@dimen/rep_icon"
+                    android:layout_height="@dimen/rep_icon"
+                    android:clickable="true"
+                    android:textSize="@dimen/rep_icons"
+                    android:textColor="@color/blue"
+                    android:text="@string/note_font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                   />
+
+                <TextView
+                    android:id="@+id/txt_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Last 30 Days Report"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/presc_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/max_padding"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_custrep"
+                    android:layout_width="@dimen/rep_icon"
+                    android:layout_height="@dimen/rep_icon"
+                    android:clickable="true"
+                    android:textSize="@dimen/rep_icons"
+                    android:textColor="@color/blue"
+                    android:text="@string/note_font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                     />
+
+                <TextView
+                    android:id="@+id/txt_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Custom Date"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/inroute" />
+
+</LinearLayout>

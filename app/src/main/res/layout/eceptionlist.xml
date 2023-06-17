@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/id_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/companycolor"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:text="Exception"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+               android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/closefont"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:layout_alignParentRight="true"></TextView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tstateez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current State : "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"></TextView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/id_head"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/dashboard_lower_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lin_excep"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/dashboard_lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/edtreason"
+            android:layout_width="match_parent"
+            android:lines="3"
+            android:visibility="gone"
+            android:layout_margin="3dp"
+            android:background="@drawable/edittext_style"
+            android:hint="Enter the reason"
+            android:layout_height="wrap_content"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+   android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+              android:background="@drawable/button_backk"
+                android:text="Cancel"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_backk"
+            android:textColor="@color/white"
+            android:text="Submit"/>
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

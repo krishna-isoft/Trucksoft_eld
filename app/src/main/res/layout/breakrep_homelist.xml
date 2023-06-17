@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    android:layout_margin="3dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Break Method"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/txtbmethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13dp"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13dp"
+
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+             />
+        </LinearLayout>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/rel1">
+
+            <LinearLayout
+            android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Break Type"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentLeft="true"
+
+                        android:textSize="13dp"></TextView>
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textSize="13dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_btype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textSize="13dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/rel2">
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:textSize="13dp"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin1">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+              >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/state"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+           />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin2">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time From"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/starttime"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin3">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time To"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/endtime"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+android:textSize="13dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin4">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:padding="4dp"
+                    android:text="Status"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tstatus"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@+id/lin5">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <TextView
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="40sp"
+android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/description"
+                android:text="@string/audplayfont1"/>
+
+            <TextView
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/description"
+                android:text="@string/stopfont"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin7"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin6">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:padding="4dp"
+                    android:text="Reason"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/treason"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

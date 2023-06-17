@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgk"
+    tools:context="com.isoft.trucksoft_elog.Company_Registration">
+    <RelativeLayout
+        android:id="@+id/driver_list_rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/driver_list_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/driver_list_iv_back"
+            android:text="COMPANY REGISTRATION"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/driver_list_tv_title"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vt">
+
+            <TextView
+                android:id="@+id/dds"
+                android:layout_width="45dp"
+                android:gravity="right"
+                android:layout_height="48dp"
+
+                android:layout_gravity="right"
+                android:visibility="invisible"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:id="@+id/vt"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/driver_list_tv_add_report"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_add_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:onClick="onClick"
+            android:padding="4dp"
+            android:text="ADD SERVICE\n TICKET"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scccc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/driver_list_rl_header"
+android:layout_marginBottom="50dp"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dashboard_lower_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/idlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/header_cover_imagez"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/max_padding"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/elogo" />
+
+                    <TextView
+                        android:id="@+id/txttread"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dp"
+                        android:text="@string/trades"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Company Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_compname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Company Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="First Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter First Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Last Name"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Last Name"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="E-mail"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="textEmailAddress"
+                            android:hint="Enter E-mail Address"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Phone Number"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_phonenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:maxLength="14"
+                            android:gravity="center"
+                            android:inputType="phone"
+                            android:hint="(XXX) XXX-XXXX"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Password"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_paswowrd"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Password"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Confirm Password"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_cpaswowrd"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Confirm Password"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="DOT Number"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_dotnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="Enter DOT Number"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="State"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Inside text input layout add
+                                  an auto complete text view
+                                    and make its input type to none-->
+                            <Spinner
+                                android:id="@+id/auto_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:inputType="none"
+                               android:gravity="center"
+                                android:background="@drawable/field"
+                                android:text="Select state"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="PHYSICAL ADDRESS"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Address Line1"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Address"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Address Line2"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter Address"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="City"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:hint="Enter City"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="State"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Inside text input layout add
+                                  an auto complete text view
+                                    and make its input type to none-->
+                            <Spinner
+                                android:id="@+id/auto_stateaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:inputType="none"
+                                android:gravity="center"
+                                android:background="@drawable/field"
+                                android:text="Select state"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Zipcode"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="Enter Zipcode"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Country"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text="USA"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:text="Business Phone Number"
+                            android:gravity="left|center"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edt_bphonenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edtheight"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/field"
+                            android:padding="5dp"
+                            android:text=""
+                            android:maxLength="14"
+                            android:gravity="center"
+                            android:inputType="phone"
+                            android:hint="(XXX) XXX-XXXX"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/brown"></View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="BILLING ADDRESS"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="0.8"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+                        <CheckBox
+                            android:id="@+id/checkBox_bill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_weight="0.2"
+                            android:layout_above="@+id/button"
+                            android:layout_centerHorizontal="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lin_bill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Address Line1"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_addressbill"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter Address"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Address Line2"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_addressbill2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter Address"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="City"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_citybill"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter City"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="State"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <!-- Inside text input layout add
+                                      an auto complete text view
+                                        and make its input type to none-->
+                                <Spinner
+                                    android:id="@+id/auto_statebill"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edtheight"
+                                    android:layout_weight="0.3"
+                                    android:inputType="none"
+                                    android:gravity="center"
+                                    android:background="@drawable/field"
+                                    android:text="Select state"
+                                    />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Zipcode"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_zipcodebill"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:hint="Enter Zipcode"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Country"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_countrybill"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text="USA"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Business Phone Number"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_phonenumberbill"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:maxLength="14"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:hint="(XXX) XXX-XXXX"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/brown"></View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="SHIPPING ADDRESS"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="0.8"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+                        <CheckBox
+                            android:id="@+id/checkBox_ship"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_weight="0.2"
+                            android:layout_above="@+id/button"
+                            android:layout_centerHorizontal="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lin_ship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/btm"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Address Line1"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_addressship"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter Address"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Address Line2"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_addressship2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter Address"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="City"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_cityship"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Enter City"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="State"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <!-- Inside text input layout add
+                                      an auto complete text view
+                                        and make its input type to none-->
+                                <Spinner
+                                    android:id="@+id/auto_stateship"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edtheight"
+                                    android:layout_weight="0.3"
+                                    android:inputType="none"
+                                    android:gravity="center"
+                                    android:background="@drawable/field"
+                                    android:text="Select state"
+                                    />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Zipcode"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_zipcodeship"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:hint="Enter Zipcode"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Country"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_countryship"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text="USA"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/btm"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:text="Business Phone Number"
+                                android:gravity="left|center"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:id="@+id/edt_phonenumbership"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edtheight"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/field"
+                                android:padding="5dp"
+                                android:text=""
+                                android:maxLength="14"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:hint="(XXX) XXX-XXXX"
+                                android:textColor="#000"
+                                android:textSize="14sp" />
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/brown"></View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/add_submit"
+                            android:layout_width="140dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:text="    SUBMIT    "
+                            android:background="@drawable/abcorner"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/driver_list_rl_header"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/dashboard_lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/max_padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Powered by"
+            android:textSize="13dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:drawableLeft="@drawable/phone_s"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/helpline"
+            android:textStyle="bold|italic"
+            android:textColor="@color/companycolor"
+            android:text="@string/contactemail"/>
+    </LinearLayout>
+</RelativeLayout>

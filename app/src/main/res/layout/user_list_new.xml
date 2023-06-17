@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@color/kdivider"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/view_foreground"
+        android:background="@android:color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@mipmap/car_off"
+
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/companycolor"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/txt_vin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_vehicle"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/description"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/txtvid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_vin"
+            android:layout_marginTop="5dp"
+            android:gravity="right|top"
+            android:textStyle="bold"
+            android:text="Vehicle ID : "
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/companycolor"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/txtcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvid"
+            android:layout_marginTop="5dp"
+            android:gravity="right|top"
+            android:textStyle="bold"
+            android:text=""
+            android:visibility="gone"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/companycolor"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/txtstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvid"
+            android:layout_marginTop="5dp"
+            android:gravity="right|top"
+            android:textStyle="bold"
+            android:text="Status : "
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/companycolor"
+            android:textSize="14dp" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

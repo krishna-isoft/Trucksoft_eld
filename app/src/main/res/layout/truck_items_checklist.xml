@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_header_status_select"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/checklist_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="21dp"
+            android:onClick="onClick"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/checklist_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/checklist_iv_back"
+            android:padding="10dp"
+            android:text="Truck Items"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/checklist_tv_done"
+            android:background="@color/white" />
+
+        
+        <TextView
+            android:id="@+id/checklist_tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Done"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+         android:id="@+id/checklist_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

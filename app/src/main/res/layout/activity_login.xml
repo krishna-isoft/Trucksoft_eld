@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/max_padding"
+    android:background="@drawable/bg"
+    tools:context="com.isoft.trucksoft_elog.LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/idlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/max_padding"
+            android:src="@drawable/elogo" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="100dp"
+
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:text="FEB , 20"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_gravity="left|center"
+                android:background="@drawable/date_background_border"
+                android:textSize="18dip"/>
+
+
+            <TextView
+                android:id="@+id/txtctime"
+                android:layout_width="150dp"
+
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textStyle="bold"
+                android:text="11:25:02 AM"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/date_background_border"
+                android:layout_gravity="center"
+
+                android:textSize="22dip"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txjjjjhttime"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="30dp"
+                android:text="PST -0800 UTC"
+                android:textColor="@color/black"
+
+                android:padding="2dp"
+
+
+
+                android:textSize="18dip"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1" >
+                <RelativeLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+
+                    <EditText
+                        android:id="@+id/staff_id"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_base"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:ellipsize="end"
+                        android:layout_gravity="top"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:hint="@string/email" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1" >
+                <RelativeLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/password"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_base"
+                            android:gravity="center"
+                            android:hint="@string/password"
+
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:ellipsize="end"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/badge_notification_1"
+                        android:layout_width="25dp"
+
+                        android:layout_height="28dp"
+                        android:layout_alignRight="@id/relative_layout"
+                        android:background="@drawable/eyt"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/submit_button_base"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:text="@string/login"
+                />
+
+            <TextView android:id="@+id/txtfd"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+
+
+                android:text="@string/reg"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18dip"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

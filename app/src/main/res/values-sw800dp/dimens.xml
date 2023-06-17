@@ -1,0 +1,50 @@
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="graph_margin">200dp</dimen>
+    <dimen name="low_padding">5dp</dimen>
+    <dimen name="low_padding_three">6dp</dimen>
+    <dimen name="text_ten">14dp</dimen>
+    <dimen name="text_fourteen">16dp</dimen>
+    <dimen name="top_height">30dp</dimen>
+    <dimen name="top_height_new">40dp</dimen>
+    <dimen name="top_below_height">40dp</dimen>
+    <dimen name="max_seven">7dp</dimen>
+    <dimen name="top_below_heightdd">32dp</dimen>
+    <dimen name="text_small">16dp</dimen>
+    <dimen name="medium_padding">10dp</dimen>
+    <dimen name="max_margin">20dp</dimen>
+    <dimen name="max_paddings">18dp</dimen>
+    <dimen name="max_padding">15dp</dimen>
+    <dimen name="back_iconsize">64dp</dimen>
+    <dimen name="bottombordersize">70dp</dimen>
+    <dimen name="home_size">125dp</dimen>
+    <dimen name="top_fontsize">12dp</dimen>
+    <dimen name="top_fontsize1">10dp</dimen>
+    <dimen name="top_fontsize2">9dp</dimen>
+    <dimen name="topheight">155dp</dimen>
+    <dimen name="topleft">21dp</dimen>
+    <dimen name="dtop">658px</dimen>
+    <dimen name="dheight">487px</dimen>
+
+    <dimen name="mtop">2dp</dimen>
+    <dimen name="mwidth">2.3dp</dimen>
+    <dimen name="lmargin">6dp</dimen>
+
+
+
+    <dimen name="newtext_ten">10dp</dimen>
+
+    <dimen name="firstheight">18dp</dimen>
+    <dimen name="firstbottom">5dp</dimen>
+    <!--    <dimen name="thirdheight">5dp</dimen>
+        <dimen name="thirdnewheight">10dp</dimen>-->
+    <dimen name="thirdheight">6dp</dimen>
+    <dimen name="thirdnewheight">13dp</dimen>
+    <dimen name="dtopdashboard">320px</dimen>
+    <dimen name="dtzzzz">350px</dimen>
+    <dimen name="martop">5dp</dimen>
+
+    <dimen name="pimage">116dp</dimen>
+
+    <dimen name="edtheight">40dp</dimen>
+</resources>

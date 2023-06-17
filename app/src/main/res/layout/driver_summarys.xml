@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/linparent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/companycolor"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:textColor="@color/white"
+            android:text="@string/backfont"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Summary Details"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TableLayout
+            android:id="@+id/tl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tb11"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="DRIVING"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today Summary"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/golden"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Week Summary"
+                    android:layout_weight="1"
+                    android:textColor="@color/golden"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tb1h1"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total miles"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/white"
+                    android:shadowColor="@color/golden"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:textSize="12sp"
+                    android:shadowRadius="1"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/daymeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:shadowColor="@color/golden"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/wkmeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:shadowColor="@color/golden"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tb1"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="DRIVE"
+                    android:textColor="@color/white"
+                    android:shadowColor="#757575"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <FrameLayout
+                    android:id="@+id/f1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        android:id="@+id/ftchart1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+                        <TextView
+                            android:id="@+id/txta1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time remaining:"/>
+
+                        <TextView
+                            android:id="@+id/txta2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/f2"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        android:id="@+id/ftchart2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+                        <TextView
+                            android:id="@+id/txta3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:text="Time remaining:"/>
+
+                        <TextView
+                            android:id="@+id/txta4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:visibility="gone"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/l1sdsb"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="ON DUTY + DRIVING"
+                    android:shadowColor="#757575"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:textSize="12sp"
+                    android:shadowRadius="1"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <FrameLayout
+                    android:id="@+id/f3"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        android:id="@+id/ftchart3" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/txta5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time remaining:"/>
+
+                        <TextView
+                            android:id="@+id/txta6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fk2"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        android:id="@+id/ftchart4" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used"/>
+
+                        <TextView
+                            android:id="@+id/txtd8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+
+
+
+
+
+
+
+
+
+            <TableRow
+                android:id="@+id/tb2"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="OFF DUTY"
+                    android:textSize="12sp"
+                    android:shadowColor="#757575"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <FrameLayout
+                    android:id="@+id/fhb1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        android:id="@+id/ftchart5" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used :"/>
+
+                        <TextView
+                            android:id="@+id/txtd10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fkf2"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        app:animationMode="overdraw"
+                        android:id="@+id/ftchart6" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+
+
+
+
+
+
+            <TableRow
+                android:id="@+id/l1sdbsbe"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="SLEEP"
+                    android:textColor="@color/white"
+                    android:shadowColor="#757575"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:textSize="12sp"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textStyle="bold"/>
+                <FrameLayout
+                    android:id="@+id/fhb1e"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        app:animationMode="overdraw"
+                        android:id="@+id/ftchart7" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fkf2e"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_height="wrap_content">
+
+                    <com.txusballesteros.widgets.FitChart
+                        style="@style/chart_style"
+                        android:layout_gravity="center"
+                        app:strokeSize="@dimen/fitstroke_size"
+                        app:animationMode="overdraw"
+                        android:id="@+id/ftchart8" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtd15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#757575"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="Time used:"/>
+
+                        <TextView
+                            android:id="@+id/txtd16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="110dp"
+                            android:textSize="12sp"
+                            android:textColor="#757575"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

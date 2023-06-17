@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_custom_background"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/companycolor"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtalert"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/companycolor"
+                    android:text="@string/alertfont"
+                    android:textColor="@color/white"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@color/companycolor"
+                    android:text="ONDUTY ALERT "
+                    android:textColor="@color/white"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/txt_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:src="@drawable/timer"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="17dp"
+                android:textColor="@color/companycolor"
+                />
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/darkred"
+                android:text=" Just a friendly reminder buddy. "/>
+            <TextView
+                android:id="@+id/txt_status2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/darkred"
+                android:text=" You have been 'On Duty' for 2 hours."/>
+            <TextView
+                android:id="@+id/txt_status3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/darkred"
+                android:text=" Are you still working?"/>
+            <TextView
+                android:id="@+id/txt_status4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/darkred"
+                android:text=" Or forgot to Log out?"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back_alertgreen"
+                    android:textColor="@color/white"
+                    android:text=" YES I'm STILL WORKING"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back_blue"
+                    android:textColor="@color/white"
+                    android:text=" THANKS FOR THE REMINDER. \n GO OFF DUTY NOW"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

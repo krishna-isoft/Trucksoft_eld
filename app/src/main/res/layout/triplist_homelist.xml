@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    android:layout_margin="3dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txttripid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:id="@+id/txtvehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+         android:layout_weight="1"
+            android:textSize="13dp"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+             />
+        </LinearLayout>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/rel1">
+
+            <LinearLayout
+            android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentLeft="true"
+
+                        android:textSize="13dp"></TextView>
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textSize="13dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtnickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textSize="13dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentTop="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+               android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+              >
+
+
+
+                <TextView
+                    android:id="@+id/txtmileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/rel2">
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start From"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/startfrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:textSize="13dp"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin1">
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+              >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End To"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/endto"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+           />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin2">
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time From"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="4dp"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/starttime"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin3">
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:padding="4dp"
+                    android:text="Time To"
+                    android:textSize="13dp"></TextView>
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/endtime"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+android:textSize="13dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin4">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/txtbusiness"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_activate"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txtpersonal"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_deactivate"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txtempty"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empty"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_deactivate"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:paddingBottom="@dimen/medium_padd"
+    android:id="@+id/view_foreground"
+    android:paddingLeft="@dimen/max_paddings"
+    android:layout_margin="4dp"
+    android:paddingRight="@dimen/max_paddings"
+    android:paddingTop="@dimen/medium_padd">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnailbig"
+        android:layout_height="@dimen/thumbnailbig"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/row_padding" />
+    <LinearLayout
+        android:id="@+id/lk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_toRightOf="@id/thumbnail"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtvehiclestatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Vehicle Status : "
+            android:gravity="right"
+            android:paddingLeft="3dp"
+            android:textStyle="bold"
+            android:paddingRight="3dp"
+            android:layout_gravity="right"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/txtvehiclestatus"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/lk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/contact_name"
+        android:textSize="@dimen/contact_name" />
+
+    <LinearLayout
+        android:id="@+id/lkkk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/thumbnail"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textColor="@color/contact_number"
+        android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/txtconnectionblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="10dp"
+            android:text="@string/bluetoothfont"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_sze" />
+        <TextView
+            android:id="@+id/txtconnectioncellular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="10dp"
+android:background="@drawable/celltour"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="@dimen/font_sze" />
+    </LinearLayout>
+
+
+    <!--<TextView
+        android:id="@+id/txtvehiclestatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:text="Vehicle Status :"
+        android:gravity="right"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textColor="@color/contact_number"
+        android:textSize="@dimen/contact_number" />-->
+    <LinearLayout
+        android:id="@+id/lk1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@id/lkkk"
+        android:layout_toRightOf="@id/thumbnail"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtvid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:text="Vehicle ID : "
+            android:textStyle="bold"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/txtvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtassigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lk1"
+        android:gravity="right"
+        android:text="Available "
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textColor="@color/contact_number"
+        android:textSize="@dimen/contact_number" />
+    <TextView
+        android:id="@+id/txtcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lk1"
+        android:gravity="right"
+        android:text=" "
+        android:visibility="gone"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textColor="@color/contact_number"
+        android:textSize="@dimen/contact_number" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ssk"
+    android:layout_margin="5dp"
+    android:background="@drawable/corner2"
+    android:orientation="vertical" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:text="     Elog By Trucksoft"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmsg"
+        android:text="Hey "
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_margin="5dp"
+
+        android:orientation="horizontal" >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow>
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_back"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Yes"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_no"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:layout_gravity="right"
+                    android:text="NO"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:layout_column="1"
+android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

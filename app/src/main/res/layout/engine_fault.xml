@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linparent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/golden"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtback"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:textColor="@color/white"
+            android:text="@string/backfont"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Engine Fault Trouble Codes"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linecode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linecodeval"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:src="@drawable/zbc"></ImageView>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

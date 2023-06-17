@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgmsg"
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:padding="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/fileurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgmsgpng"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/message"
+        android:text=""
+        android:background="@drawable/rightchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/chatview_iv_send_statusk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@id/timestamp"
+        android:textSize="22dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/message"
+        android:paddingBottom="10dp"
+        android:text="@string/tick_icon"
+        android:textColor="@color/dblue"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintRight_toLeftOf="@+id/message"  />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chatview_iv_send_statusk"
+        app:layout_constraintRight_toLeftOf="@+id/message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

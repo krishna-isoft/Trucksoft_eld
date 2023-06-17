@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lkgray">
+
+    <RelativeLayout
+        android:id="@+id/driver_list_rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/driver_list_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/driver_list_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/driver_list_iv_back"
+            android:text="Trips"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:id="@+id/lk"
+    android:layout_below="@+id/driver_list_rl_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tfromdate"
+            android:text="From Date"
+            android:background="@drawable/button_act"
+            android:layout_width="100dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/ttodate"
+            android:text="To Date"
+            android:background="@drawable/button_act"
+            android:layout_width="100dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/tsearch"
+        android:text="Search"
+        android:background="@drawable/button_act"
+        android:layout_width="100dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lk"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/driver_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dashboard_lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_padding"
+            android:background="@color/footer_color">
+
+        </View>
+        <!--  <TextView
+              android:id="@+id/helpline"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_gravity="center_horizontal"
+              android:text="+1-877-922-9700"
+              android:drawableLeft="@drawable/phone_s"
+              android:textColor="@color/black" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_gravity="center_horizontal"
+              android:text="@string/company_mark"
+              android:textColor="@color/black" />
+
+
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="3dp"
+              android:layout_gravity="center"
+              android:src="@drawable/logo_small" />-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_gravity="center"
+       android:hint="Enter your E-mail Id"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:background="@drawable/submit_button_base"
+
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:background="@drawable/submit_button_base"
+            android:textStyle="bold"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</LinearLayout>

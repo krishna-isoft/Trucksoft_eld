@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.isoft.trucksoft_elog.Vehicle.Vehicle_seect">
+
+ <!--   <item android:id="@+id/action_refresh"
+    android:icon="@android:drawable/ic_menu_refresh"
+    android:orderInCategory="100"
+    android:title=""
+    app:showAsAction="always"
+    />-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/sk"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item android:id="@+id/action_logout"
+        android:icon="@drawable/back_dashboard"
+        android:orderInCategory="50"
+        android:layout_gravity="end"
+        android:title=""
+        app:showAsAction="always"
+        />
+</menu>

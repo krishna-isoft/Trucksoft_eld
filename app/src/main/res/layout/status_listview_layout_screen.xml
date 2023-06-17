@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/filter_status_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:singleLine="true" />
+    <ImageView
+        android:id="@+id/filter_status_maintain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:src="@drawable/error" />
+
+    <ImageView
+        android:id="@+id/filter_status_check_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:padding="10dp"
+        android:src="@drawable/tick" />
+
+</RelativeLayout>
