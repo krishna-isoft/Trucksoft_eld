@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#E1000A</color>
+    <color name="Red">#E1000A</color>
+    <color name="light_gray">#A9A9A9</color>
+    <color name="white">#fff</color>
+    <color name="colorYellow">#F5FA55</color>
+    <color name="greenish">#6A5ACD</color>
+    <color name="description">#a9a9a9</color>
+    <color name="black">#000000</color>
+    <color name="item_name">#535353</color>
+    <color name="blue">#2d5d88</color>
+    <color name="lightblue">#99CCFF</color>
+    <color name="inroute">#17BD17</color>
+    <color name="green">#17BD17</color>
+    <color name="golden">#ffba00</color>
+    <color name="gree">#2E8B57</color>
+    <color name="dd">#708090</color>
+    <color name="ldgray">#D3D3D3</color>
+    <color name="yellow">#ECF03C</color>
+    <color name="darkgreen">#66a266</color>
+    <color name="dgray">#808080</color>
+    <color name="holo_dark">#ff000000</color>
+
+    <color name="splgray">#D3D3D3</color>
+
+    <color name="cdd">#ffffffff</color>
+
+    <color name="bg">#fff5f5f5</color>
+
+    <color name="text_dark">#0000FF</color>
+    <color name="text">#ff787878</color>
+
+    <color name="blue_A2E5F5">#A2E5F5</color>
+    <color name="pickup">#F8C7FF</color>
+
+    <color name="rest">#6C17FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="transparent">#80000000</color>
+    <color name="brown">#A52A2A</color>
+    <color name="dkblue">#00008b</color>
+    <color name="lgray">#808080</color>
+    <color name="footer_color">#587343</color>
+    <color name="llgray">#A9A9A9</color>
+    <color name="topher">#6495ED</color>
+    <color name="redx">#E1000A</color>
+    <color name="lightback">#f4f5f7</color>
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+    <color name="companycolor">#273663</color>
+    <color name="upcompanycolor">#3D559C</color>
+    <color name="dblue">#09c8eb</color>
+    <color name="viedtick">#61BBF7</color>
+    <color name="lkgray">#d4d4d4</color>
+    <color name="listdivider">#dedede</color>
+    <color name="kdivider">#f1f1f1</color>
+    <color name="darkorange">#FF8C00</color>
+    <color name="darkred">#FF0000</color>
+    <color name="ts">#19678c</color>
+    <color name="chart_value_1">#2d4302</color>
+    <color name="chart_value_2">#75a80d</color>
+    <color name="chart_value_3">#8fc026</color>
+    <color name="chart_value_4">#B5CC84</color>
+    <color name="gr_clr">#009900</color>
+    <color name="l_clr">#fff6e5</color>
+
+    <color name="lorange">#ffb732</color>
+    <color name="contact_name">#333333</color>
+    <color name="name_color">#F1795B</color>
+    <color name="contact_number">#8c8c8c</color>
+    <color name="background">#40000000</color>
+    <color name="device_name">@android:color/white</color>
+    <color name="status">#ffaaaaaa</color>
+    <color name="rssi">#ffaaaaaa</color>
 </resources>

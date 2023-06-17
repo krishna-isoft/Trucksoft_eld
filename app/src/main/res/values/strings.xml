@@ -1,3 +1,187 @@
 <resources>
-    <string name="app_name">Trucksoft_eld</string>
+    <string name="app_name">Trucksoft- ELD</string>
+    <string name="appname">Trucksoft- ELD</string>
+    <string name="verz">  v.24.15</string>
+    <string name="ph_number">(855) 922-9700</string>
+    <string name="cemail">info@e-logbook.info</string>
+    <string name="user_name">User Name</string>
+    <string name="email">E- Mail</string>
+ <string name="cityy">City</string>
+ <string name="state">State</string>
+    <string name="vin">Vin Number</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <item name="log_chart_start_y_multiplier" type="string">1.26</item>
+    <string name="trade"> ®</string>
+    <string name="trades">   ®</string>
+    <string name="thours">Total Hrs</string>
+    <string name="a_m">A.M</string>
+    <string name="p_m">P.M</string>
+    <string name="reg">
+      <u>New Registration</u>
+    </string>
+    <string-array name="str_arr_img_picker">tick_icon
+        <item>Image Picker</item>
+        <item>Camera</item>
+    </string-array>
+    <string name="socket_timeout">Oops! Timeout Error!</string>
+    <string name="on_dutty">ON DUTY (Hr)</string>
+    <string name="of_dutty">OFF DUTY (Hr)</string>
+    <string name="sleep">SLEEP(Hr)</string>
+    <string name="start">START</string>
+    <string name="duration">DURATION</string>
+
+    <string name="total">TOTAL</string>
+    <string name="odo">Odometer</string>
+    <string name="date">Date</string>
+    <string name="tleft">TIME LEFT</string>
+    <string name="tallow">TIME ALLOWED</string>
+    <string name="drive">DRIVE (Hr)</string>
+    <string name="address">ADDRESS</string>
+    <string name="remarkd">REMARK</string>
+    <string name="tripno">SHIP. DOC. #</string>
+    <string name="cmdty">COMMODITY</string>
+    <string name="str_save_image_text">Your images has been saved in gallery at </string>
+
+    <string name="edit">Edit</string>
+    <string name="emailz">Email</string>
+    <string name="del">Delete</string>
+   <string name="backfont">&#xf2ca;</string>
+    <string name="playfont">&#xf10a;</string>
+    <string name="playfont1">&#xf400;</string>
+    <string name="sendfont">&#xf2f6;</string>
+    <string name="audplayfont">&#xf10a;</string>
+    <string name="ticonfont">&#xf371;</string>
+    <string name="audplayfont1">&#xf362;</string>
+    <string name="camerafont">&#xf118;</string>
+    <string name="stopfont">&#xf24f;</string>
+    <string name="bluetoothfont">&#xf116;</string>
+    <string name="cellularfont">&#xf274;</string>
+    <string name="smsfont">&#xf2eb;</string>
+    <string name="homefont">&#xf38f;</string>
+    <string name="company_mark">Powered by iSoft Global Software Solutions </string>
+    <string name="company_marks">Powered by iSoft Global Software Solutions  </string>
+
+    <string name="company_mark2">Powered by iSoft Global Software Solutions \n</string>
+
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="drid">Driver ID</string>
+    <string name="lrid">Driver License</string>
+    <string name="otpk">Enter OTP</string>
+    <string name="ok">OK</string>
+
+    <string name="sign">SIGN HERE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="clear">CLEAR</string>
+    <string name="save">SAVE</string>
+    <string name="saved">SAVE &amp; SEND</string>
+    <dimen name="max_margintop">15dp</dimen>
+
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="ph">Phone Number</string>
+
+    <string name="rotp"><u>Resend OTP</u>.</string>
+    <string name="notepad_font">&#xf376;</string>
+    <string name="note_font">&#xf127;</string>
+    <string name="email_font">&#xf422;</string>
+    <string name="emailq_font">&#xf423;</string>
+    <string name="delete_font">&#xf37f;</string>
+    <string name="edit_font">&#xf2bf;</string>
+    <string name="galary_font">&#xf148;</string>
+    <string name="camera_font">&#xf3f6;</string>
+    <string name="upload_font">&#xf147;</string>
+    <string name="lock_font">&#xf392;</string>
+    <string name="person_font">&#xf3a0;</string>
+    <string name="add_font">&#xf359;</string>
+    <string name="ptrip">Pre Trip</string>
+    <string name="potrip">Post Trip</string>
+    <string name="tickm">&#x2713;</string>
+    <string name="rightfont">&#xf125;</string>
+    <string name="alertfont">&#xf100;</string>
+    <string-array name="tripoption">
+        <item>@string/ptrip</item>
+        <item>@string/potrip</item>
+    </string-array>
+    <string name="chat_icon">&#xf3fa;</string>
+    <string name="chat_icon1">&#xf3f9;</string>
+
+    <string name="chat_icon2">&#xf3fc;</string>
+
+    <string name="tick_icon">&#xf382;</string>
+
+    <string name="closed_icon">&#xf36e;</string>
+    <string name="tick_singleicon">&#xf383;</string>
+    <string name="add_vreport">Add Vehicle Inspection Report</string>
+    <string name="carrier">Carrier</string>
+    <string name="tripopt">Trip Option</string>
+    <string name="truckno">Truck No.</string>
+    <string name="truck">Truck </string>
+    <string name="odometer">Odometer Reading</string>
+
+    <string name="trailer">Trailer</string>
+    <string name="strailer">Select Trailer</string>
+    <string name="remark">Remark</string>
+    <string name="eremark">Enter Remark</string>
+    <string name="chrtext"> CONDITION OF THE ABOVE VEHICLE IS SATISFACTORY</string>
+    <string name="drname">Driver Name</string>
+    <string name="drsignature">Driver Signature</string>
+    <string name="drawsig">Draw Signature here</string>
+    <string name="mech">Mechanics Name</string>
+    <string name="mchsignature">Mchanics Signature</string>
+    <string name="vechreport">Vehicle Inspection Report</string>
+    <string name="addvechreport">Add Vehicle Inspection Report</string>
+    <string name="drtext"> ABOVE DEFECTS CORRECTED</string>
+    <string name="drtext1"> ABOVE DEFECTS NEED NOT BE CORRECTED FOR SAFE OPERATIN OF VEHICLE</string>
+    <string name="enmail">Enter mail id</string>
+    <string name="google_maps_key">AIzaSyCAkzTMFUiu6ZwD8pS1Kht7FDqAvbgHLrE</string>
+    <string name="title_activity_chat_room_discussion">ChatRoomDiscussionActivity</string>
+    <string name="search_font">&#xf4a4;</string>
+    <string name="service_not">Service Note Available</string>
+    <string name="latwrong">Latitude Longitude wrong</string>
+    <string name="chat_font">&#xf11d;</string>
+
+    <string name="contactemail">Support / Sales : (855) 922-9700</string>
+    <string name="contactemail11">E-mail : shan@e-logbook.info</string>
+
+    <string name="cwebsite">Website : https://e-logbook.info/</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <string name="tea_break">Short Break \n   ( 10 minutes break)    </string>
+    <string name="lunch_break">LUNCH BREAK \n   ( 30 minutes break)    </string>
+    <string name="next_icon">&#xf2f8;</string>
+    <string name="left_icon">&#xf4c7;</string>
+
+    <string name="ble_not_supported">Bluetooth Not Supported</string>
+    <string name="company_name">Company Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="contact_number">Conact Number</string>
+    <string name="image">Image</string>
+
+    <string name="message">Message</string>
+    <string name="toolbar_title">Search Vehicle</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Type name…</string>
+    <string name="channel_name">e-Trucksoft- ELD app update</string>
+    <string name="channel_description">e-Trucksoft- ELD app update from playstore</string>
+    <string name="closefont">&#xf36e;</string>
+    <string name="scancel">"Slide to cancel"</string>
+    <string name="compreg">
+        <u>REGISTER</u>
+    </string>
+    <string name="dontaccount">
+        <u>DONT HAVE AN ACCOUNT?</u>
+    </string>
+    <string name="editfont">&#xf37e;</string>
+    <string name="mksh"> Please take a moment to review below the key points of our <u>Privacy Policy </u>and <u>Terms of Service </u>"</string>
+    <string name="loaddetail">      * The Above information will automatically apply to all your activities for today\'s date.<u> If you are doing more than one load in the same day</u>, please enter a different Shipping document numbers accordingly in the LOGBOOK section. </string>
+    <string-array name="select_states">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
+
 </resources>
